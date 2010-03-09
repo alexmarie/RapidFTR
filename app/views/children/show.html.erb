@@ -14,9 +14,17 @@
   </dl>
 </div>
 
+
+<div class="profile-tools">
+  <ul>
+    <li class="edit"><%= link_to 'Edit', edit_child_path(@child) %> </li>
+    <li class="back"><%= link_to 'Back', children_path %></li>
+  </ul>
+</div>
+
+|
+
+
 <p class="imagePlaceholder">
   <%= image_tag child_path(@child)+".jpg" %>
 </p>
-
-<%= link_to 'Edit', edit_child_path(@child) %> |
-<%= link_to 'Back', children_path %>
