@@ -7,7 +7,7 @@
     <dd><%= @child_view.unique_id %></dd>
 
     <% @child_view.fields.each do |field| %>
-        <dt><%= field.name.humanize %></dt>
+        <dt><%= field.name.humanize %>:</dt>
         <dd><%= field.value %></dd>
     <% end %>
 
@@ -21,10 +21,3 @@
     <li class="back"><%= link_to 'Back', children_path %></li>
   </ul>
 </div>
-
-|
-
-
-<p class="imagePlaceholder">
-  <%= image_tag child_path(@child)+".jpg" %>
-</p>
